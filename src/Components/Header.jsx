@@ -18,7 +18,7 @@ function Header() {
         <div className="header">
             <div className="header__left">
                 <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQOPd4RlVof0ztjbcbcmcDjzfs1hQV6AL21BA&usqp=CAU"
+                    src="https://www.beyond.ca/wp-content/uploads/2016/02/BMW-M-Logo.jpg"
                      alt=""
             />
             </div>

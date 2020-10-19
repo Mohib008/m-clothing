@@ -1,8 +1,7 @@
 import React, { classes } from 'react';
 import './Header.css';
 import SearchIcon from '@material-ui/icons/Search';
-import HomeIcon from '@material-ui/icons/Home';
-import { Avatar, IconButton, TextField } from '@material-ui/core';
+import { Avatar, IconButton, Paper, Tab, Tabs, TextField } from '@material-ui/core';
 import AddIcon from '@material-ui/icons/Add';
 import ForumIcon from '@material-ui/icons/Forum';
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
@@ -23,11 +22,21 @@ function Header() {
                      alt=""
             />
             </div>
+            <div className="paper">
+                <Paper>
+                    <Tabs
+                        indicatorColor="primary"
+                        textColor="primary"
+                        centered
+                    >
+                        <Tab label="WOMENS" />
+                        <Tab label="MENS" />
+                        <Tab label="KIDS" />
+                    </Tabs>
+                </Paper>
+            </div>
             
             <div className="header__center">
-                <div className="header__option--active">
-                  <HomeIcon fontSize="large" />
-                </div>
                 <div className="header__input">
                     <SearchIcon />
                     <input type="text" placeholder="Search Stor" />
@@ -35,9 +44,7 @@ function Header() {
             </div>
 
             <div className="header__right">
-                <form className= {classes} noValidate autoComplete="off" style={{ paddingRight:"10px"}}>
-                    <TextField id="outlined-basic" label="Search Field" variant="outlined" />
-                </form>
+    
                 <div className="header__info">
                     <Avatar />
                     <h4>LogIn</h4>

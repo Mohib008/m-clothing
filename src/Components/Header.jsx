@@ -1,8 +1,9 @@
 import React, { classes } from 'react';
 import './Header.css';
 import SearchIcon from '@material-ui/icons/Search';
-import { Avatar, IconButton, Paper, Tab, Tabs, TextField } from '@material-ui/core';
-import AddIcon from '@material-ui/icons/Add';
+import { Avatar, IconButton, Tab, Tabs } from '@material-ui/core';
+//import AddIcon from '@material-ui/icons/Add';
+import ShopIcon from '@material-ui/icons/Shop';
 import ForumIcon from '@material-ui/icons/Forum';
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -23,7 +24,6 @@ function Header() {
             />
             </div>
             <div className="paper">
-                <Paper>
                     <Tabs
                         indicatorColor="primary"
                         textColor="primary"
@@ -33,7 +33,6 @@ function Header() {
                         <Tab label="MENS" />
                         <Tab label="KIDS" />
                     </Tabs>
-                </Paper>
             </div>
             
             <div className="header__center">
@@ -51,7 +50,7 @@ function Header() {
                 </div>
                 <div className="header__icon">
                 <IconButton>
-                    <AddIcon />
+                    <ShopIcon />
                 </IconButton>
                 <IconButton>
                     <ForumIcon />

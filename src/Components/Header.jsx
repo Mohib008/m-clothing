@@ -1,7 +1,7 @@
 import React, { classes } from 'react';
 import './Header.css';
 import SearchIcon from '@material-ui/icons/Search';
-import { Avatar, IconButton, Tab, Tabs } from '@material-ui/core';
+import { Avatar, IconButton, Tab } from '@material-ui/core';
 //import AddIcon from '@material-ui/icons/Add';
 import ShopIcon from '@material-ui/icons/Shop';
 import ForumIcon from '@material-ui/icons/Forum';
@@ -23,16 +23,12 @@ function Header() {
                      alt=""
             />
             </div>
-            <div className="paper">
-                    <Tabs
-                        indicatorColor="primary"
-                        textColor="primary"
-                        centered
-                    >
+            <div className="tab">
+                    
                         <Tab label="WOMENS" />
                         <Tab label="MENS" />
                         <Tab label="KIDS" />
-                    </Tabs>
+                    
             </div>
             
             <div className="header__center">

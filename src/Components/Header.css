@@ -9,6 +9,12 @@
     background-color: white;
 }
 
+.tab {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
 .header__left {
     display: flex;
     justify-content: space-evenly;

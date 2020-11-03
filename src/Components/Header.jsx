@@ -1,4 +1,4 @@
-import React, { classes } from 'react';
+import React from 'react';
 import './Header.css';
 import SearchIcon from '@material-ui/icons/Search';
 import { Avatar, IconButton, Tab } from '@material-ui/core';

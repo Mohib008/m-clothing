@@ -7,18 +7,16 @@ import Header from './Components/Header';
 
 
 
-const HatsPage = () => {
-  return (
+const HatsPage = () => (
   <div> <h1>Hats Page </h1></div>
     )
-  }
 
 function App() {
   return (
     <div className="App">
     <Header />
     <Switch>
-      <Route path='/' component={ HomePage } />
+      <Route exact path='/' component={ HomePage } />
       <Route path='/hats' component={HatsPage} />
     </Switch>
     </div>

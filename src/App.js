@@ -7,29 +7,11 @@ import Header from './Components/Header';
 
 
 
-const HatsPage = (props) => {
-  console.log(props)
+const HatsPage = () => {
   return (
   <div> <h1>Hats Page </h1></div>
     )
   }
-
-const  TopicList = (props) => {
-  console.log(props);
-  return (
-    <div>
-      <h1> TOPIC LIST Page </h1>
-    </div>
-  )
-}
-
-const TopicDetail = () => {
-  return (
-    <div>
-      <h1> TOPIC DETAIL Page </h1>
-    </div>
-  )
-}
 
 function App() {
   return (
@@ -38,8 +20,6 @@ function App() {
     <Switch>
       <Route path='/' component={ HomePage } />
       <Route path='/hats' component={HatsPage} />
-      <Route exact path='/TopicList' component={TopicList} />
-      <Route path='/TopicDetail' component={TopicDetail} />
     </Switch>
     </div>
   );

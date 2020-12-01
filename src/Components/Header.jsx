@@ -11,12 +11,12 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 //import { Photo } from '@material-ui/icons';
 //import userEvent from '@testing-library/user-event';
 import { Link } from 'react-router-dom';
+import { auth } from '../../src/firebase/firebase';
 
 
 
-function Header() {
+const Header = ({ currentUser }) => (
     //const [{user}, dispatch] = useStateValue();
-    return (
         <div className="header">
             <Link to='/'>
               <div className="header__left">
@@ -46,11 +46,21 @@ function Header() {
             </div>
 
             <div className="header__right">
-    
-                <div className="header__info">
+              { 
+                currentUser ?
+                <div className="header__info" onClick={() => auth.signOut()}>
                     <Avatar />
-                    <h4>LogIn/SignUp</h4>
+                    <h4>SIGN OUT</h4>
                 </div>
+
+                :
+                
+                <Link className="header__info">
+                    <h4>SIGN IN</h4>
+                </Link>
+
+              }   
+
                 <div className="header__icon">
                 <IconButton>
                     <ShopIcon />
@@ -67,7 +77,6 @@ function Header() {
                 </div>
             </div>
         </div>
-    )
-}
+    );
 
 export default Header;

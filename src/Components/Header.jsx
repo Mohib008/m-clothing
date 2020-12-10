@@ -55,7 +55,7 @@ const Header = ({ currentUser }) => (
 
                 :
                 
-                <Link className="header__info">
+                <Link className="header__info" to="/signin">
                     <h4>SIGN IN</h4>
                 </Link>
 

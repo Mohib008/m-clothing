@@ -34,13 +34,16 @@ class App extends React.Component {
               ...snapshot.data()
             }
           });
-          console.log(this.state);
         });
       }
       this.setState({ currentUser: userAuth });
     });
   }
+   
 
+  // new update in sign in handlesubmit.
+
+  
   componentWillUnmount() {
     this.unsubscribeFromAuth();
   }

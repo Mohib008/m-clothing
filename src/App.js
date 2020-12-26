@@ -39,7 +39,11 @@ class App extends React.Component {
       this.setState({ currentUser: userAuth });
     });
   }
+   
 
+  // new update in sign in handlesubmit.
+
+  
   componentWillUnmount() {
     this.unsubscribeFromAuth();
   }
